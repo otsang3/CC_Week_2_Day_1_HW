@@ -18,6 +18,11 @@ def test_get_cohort()
   assert_equal("G18", @student1.cohort())
 end
 
+def test_set_name()
+  @student1.set_name("Niamh")
+  assert_equal("Niamh", @student1.student_name())
+end
+
 def test_can_talk()
   assert_equal("I can talk!", @student1.can_talk())
 end
